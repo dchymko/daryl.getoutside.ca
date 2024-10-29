@@ -28,7 +28,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1575,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2135324-1024x764.jpg" alt="" class="wp-image-1575"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2135324-1024x764.jpg" alt="" class="wp-image-1575"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -54,7 +54,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1577,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2138093-1024x1007.jpg" alt="" class="wp-image-1577"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2138093-1024x1007.jpg" alt="" class="wp-image-1577"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -80,7 +80,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1581,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2139472-1024x861.jpg" alt="" class="wp-image-1581"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2139472-1024x861.jpg" alt="" class="wp-image-1581"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -106,7 +106,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1583,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2132482-941x1024.jpg" alt="" class="wp-image-1583"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2132482-941x1024.jpg" alt="" class="wp-image-1583"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -132,7 +132,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1599,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211017_164041-768x1024.jpg" alt="" class="wp-image-1599"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211017_164041-768x1024.jpg" alt="" class="wp-image-1599"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -158,7 +158,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1586,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2148093-1024x870.jpg" alt="" class="wp-image-1586"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2148093-1024x870.jpg" alt="" class="wp-image-1586"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -184,7 +184,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1598,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211017_163841-768x1024.jpg" alt="" class="wp-image-1598"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211017_163841-768x1024.jpg" alt="" class="wp-image-1598"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -210,7 +210,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1590,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2142572-1024x883.jpg" alt="" class="wp-image-1590"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2142572-1024x883.jpg" alt="" class="wp-image-1590"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -236,7 +236,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1597,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211017_161041-1024x768.jpg" alt="" class="wp-image-1597"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211017_161041-1024x768.jpg" alt="" class="wp-image-1597"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -262,7 +262,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1591,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2141312-1024x724.jpg" alt="" class="wp-image-1591"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2141312-1024x724.jpg" alt="" class="wp-image-1591"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns -->
@@ -288,7 +288,7 @@ slug: garage-sale
 
 <!-- wp:column {"width":"66.66%"} -->
 <div class="wp-block-column" style="flex-basis:66.66%"><!-- wp:image {"id":1592,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://getoutside.ca/wp-content/uploads/2021/10/IMG_20211016_2133382-1024x952.jpg" alt="" class="wp-image-1592"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/2021/10/IMG_20211016_2133382-1024x952.jpg" alt="" class="wp-image-1592"/></figure>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>

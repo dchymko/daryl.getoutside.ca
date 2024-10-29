@@ -15,5 +15,5 @@ slug: about
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":289} -->
-<figure class="wp-block-image"><img src="https://getoutside.ca/wp-content/uploads/2019/03/Daryl-Chymko-B1_0082_a-1024x690.jpg" alt="" class="wp-image-289"/><figcaption class="wp-element-caption">Day 2 of biking in Banff National Park backcountry, 1993 (photo: Daryl Chymko)</figcaption></figure>
+<figure class="wp-block-image"><img src="/assets/images/2019/03/Daryl-Chymko-B1_0082_a-1024x690.jpg" alt="" class="wp-image-289"/><figcaption class="wp-element-caption">Day 2 of biking in Banff National Park backcountry, 1993 (photo: Daryl Chymko)</figcaption></figure>
 <!-- /wp:image -->

@@ -1,0 +1,7 @@
+title: PostBase
+fields:
+  -
+    handle: content
+    field:
+      type: code
+      display: Content

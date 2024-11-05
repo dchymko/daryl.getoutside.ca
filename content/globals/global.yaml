@@ -1,1 +1,22 @@
 title: Global
+data:
+  site_name: "Daryl's Adventures"
+  tagline: "Sometimes I go outside.  Sometimes I'm inside planning the next adventure outside."
+  social_links:
+    discord: null
+    dribbble: null
+    email: 'mailto:daryl@getoutside'
+    facebook: null
+    instagram: null
+    kickstarter: null
+    patreon: null
+    pinterest: null
+    snapchat: null
+    telegram: null
+    tiktok: null
+    twitch: null
+    twitter: 'https://twitter.com/statamic'
+    whatsapp: null
+    youtube: null
+    zoom: null
+  copyright: 'Stumblr by <a href="https://statamic.com">Statamic</a>.'

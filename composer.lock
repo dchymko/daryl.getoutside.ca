@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "115ea1161f946b581f0de1a4b7ee0830",
+    "content-hash": "e00c97a48f6da5e4f0443da3fd82d183",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -4673,6 +4673,53 @@
             "time": "2024-10-17T15:45:32+00:00"
         },
         {
+            "name": "studio1902/statamic-peak-browser-appearance",
+            "version": "v3.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/studio1902/statamic-peak-browser-appearance.git",
+                "reference": "c3d9c7d45bc1bae6cebef8891c92734d391da505"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-browser-appearance/zipball/c3d9c7d45bc1bae6cebef8891c92734d391da505",
+                "reference": "c3d9c7d45bc1bae6cebef8891c92734d391da505",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Peak Browser Appearance",
+                    "description": "Statamic Peak Browser Appearance addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Studio1902\\PeakBrowserAppearance\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Studio1902\\PeakBrowserAppearance\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/studio1902/statamic-peak-browser-appearance/issues",
+                "source": "https://github.com/studio1902/statamic-peak-browser-appearance/tree/v3.5.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/studio1902",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-05-31T11:38:42+00:00"
+        },
+        {
             "name": "studio1902/statamic-peak-seo",
             "version": "v8.16.0",
             "source": {
@@ -4718,6 +4765,53 @@
                 }
             ],
             "time": "2024-08-31T11:00:54+00:00"
+        },
+        {
+            "name": "studio1902/statamic-peak-tools",
+            "version": "v6.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/studio1902/statamic-peak-tools.git",
+                "reference": "7dbbe49ee2178007d8155239421221442091572d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/studio1902/statamic-peak-tools/zipball/7dbbe49ee2178007d8155239421221442091572d",
+                "reference": "7dbbe49ee2178007d8155239421221442091572d",
+                "shasum": ""
+            },
+            "require": {
+                "statamic/cms": "^4.0 || ^5.0"
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Statamic Peak Tools",
+                    "description": "Statamic Peak Tools addon"
+                },
+                "laravel": {
+                    "providers": [
+                        "Studio1902\\PeakTools\\ServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Studio1902\\PeakTools\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "support": {
+                "issues": "https://github.com/studio1902/statamic-peak-tools/issues",
+                "source": "https://github.com/studio1902/statamic-peak-tools/tree/v6.3.3"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/studio1902",
+                    "type": "github"
+                }
+            ],
+            "time": "2024-10-08T07:12:59+00:00"
         },
         {
             "name": "symfony/console",

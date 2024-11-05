@@ -1,5 +1,5 @@
 ---
-id: fe145f7e-fa40-4d81-8069-06591cb75543
+id: site_home
 blueprint: home_pages
 title: Home
 updated_by: 36715fa5-8874-4f5a-a464-da4c9da61c84

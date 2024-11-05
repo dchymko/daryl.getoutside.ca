@@ -1,1 +1,7 @@
-{  }
+social_media:
+  -
+    id: m351vfyv
+    handle: dchymko
+    prefix: 'https://www.github.com/'
+    type: github
+    enabled: true

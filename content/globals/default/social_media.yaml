@@ -1,1 +1,7 @@
-{  }
+social_media:
+  -
+    id: m351vnte
+    handle: dchymko
+    prefix: 'https://www.github.com/'
+    type: github
+    enabled: true

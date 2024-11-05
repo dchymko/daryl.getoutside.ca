@@ -1,0 +1,84 @@
+title: 'Page builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      localizable: true
+      hide_display: true
+      collapse: true
+      listable: false
+      display: 'Page builder'
+      button_label: 'Add block'
+      sets:
+        fw:
+          display: FW
+          instructions: 'Collection based content'
+          icon: alert-help-question
+          sets:
+            collection:
+              display: Collection
+              instructions: 'Show collection entries.'
+              icon: file-content-list
+              fields:
+                -
+                  import: collection
+            full_width_image:
+              display: 'Full width image'
+              instructions: 'A full width image with optional text and button(s).'
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: full_width_image
+            images_grid:
+              display: 'Images grid'
+              instructions: 'A multi row image grid.'
+              icon: layout-grid-dots
+              fields:
+                -
+                  import: images_grid
+            index_content:
+              display: 'Index content'
+              instructions: 'Render the currently mounted entries if available.'
+              icon: file-content-list
+              fields:
+                -
+                  import: index_content
+        interactive:
+          display: Interactive
+          instructions: 'Interactive blocks.'
+          icon: programming-script-code
+          sets:
+            form:
+              display: Form
+              instructions: 'Select and render a form.'
+              icon: mail-chat-bubble-text
+              fields:
+                -
+                  import: form
+            cards:
+              display: Cards
+              instructions: 'Show linkable cards with text.'
+              icon: link
+              fields:
+                -
+                  import: cards
+        text:
+          display: Text
+          instructions: 'Text based blocks.'
+          icon: text-formatting-initial-letter
+          sets:
+            article:
+              display: Article
+              instructions: 'Long form content, can be expanded with media like figures, video, quotes or tables.'
+              icon: text-formatting-image-bottom
+              fields:
+                -
+                  import: article
+            full_width_image:
+              display: 'Full width image'
+              instructions: 'A full width image with optional text and button(s).'
+              icon: media-image-picture-orientation
+              fields:
+                -
+                  import: full_width_image

@@ -1,0 +1,7 @@
+title: 'Full Width'
+fields:
+  -
+    handle: size
+    field: common.size
+    config:
+      instructions: 'The size in which the Full Width should be displayed.'

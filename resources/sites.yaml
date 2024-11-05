@@ -1,4 +1,8 @@
 default:
   name: '{{ config:app:name }}'
+  url: /daryl
+  locale: en_US
+home:
+  name: Home
   url: /
   locale: en_US

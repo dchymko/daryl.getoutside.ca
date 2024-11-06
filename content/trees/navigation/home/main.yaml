@@ -1,0 +1,8 @@
+tree:
+  -
+    id: dbb67c1e-bc39-4df3-bca3-4ba4d7322db8
+    entry: site_home
+  -
+    id: 2cd1b9a5-93b1-49e9-af1a-047d228c1eda
+    title: "Daryl's Photos"
+    url: /daryl

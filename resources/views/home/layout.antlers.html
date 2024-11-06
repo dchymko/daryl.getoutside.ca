@@ -7,21 +7,14 @@
     class="antialiased scroll-smooth scroll-pt-4"
 >
     <head>
-        <!-- Fathom - beautiful, simple website analytics -->
-        <script
-            src="https://cdn.usefathom.com/script.js"
-            data-site="FEEXZGHX"
-            defer
-        ></script>
-        <!-- / Fathom -->
         <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
             name="viewport"
             content="width=device-width, initial-scale=1.0, viewport-fit=cover"
         />
-        <script src="https://cdn.tailwindcss.com"></script>
-        {{ partial:statamic-peak-seo::snippets/seo }} {{
+        {{ vite src="resources/css/peak.site.css|resources/js/site.js" }} {{
+        partial:statamic-peak-seo::snippets/seo }} {{
         partial:statamic-peak-browser-appearance::snippets/browser_appearance }}
         {{ partial:statamic-peak-tools::snippets/live_preview }}
     </head>

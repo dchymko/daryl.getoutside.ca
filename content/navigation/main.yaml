@@ -1,1 +1,4 @@
 title: Main
+collections:
+  - home_pages
+root: true

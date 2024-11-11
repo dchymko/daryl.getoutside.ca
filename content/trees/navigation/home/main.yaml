@@ -4,5 +4,5 @@ tree:
     entry: site_home
   -
     id: 2cd1b9a5-93b1-49e9-af1a-047d228c1eda
-    title: "Daryl's Photos"
-    url: /t/daryl
+    title: "Team Photos"
+    url: /team

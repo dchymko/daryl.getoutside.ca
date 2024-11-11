@@ -6,8 +6,7 @@
 /public/img/
 /public/static/
 /public/images
-/public/assets/images
-/public/assets/video
+/public/assets
 /storage/*.key
 /vendor
 .env

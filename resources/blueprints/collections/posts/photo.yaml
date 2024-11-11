@@ -12,6 +12,7 @@ tabs:
               required: true
               validate:
                 - required
+              localizable: false
           -
             handle: photo
             field:
@@ -22,6 +23,7 @@ tabs:
               max_files: 1
               display: 'Assets Field'
               type: assets
+              localizable: false
           -
             import: generic
           -
@@ -45,6 +47,7 @@ tabs:
               default: now
               validate:
                 - required
+              localizable: false
           -
             handle: tags
             field:
@@ -53,3 +56,13 @@ tabs:
                 - tags
               display: Tags
               mode: select
+              localizable: false
+          -
+            handle: username
+            field:
+              type: terms
+              taxonomies:
+                - username
+              display: Username
+              mode: select
+              localizable: false

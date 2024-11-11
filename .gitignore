@@ -6,6 +6,8 @@
 /public/img/
 /public/static/
 /public/images
+/public/assets/images
+/public/assets/video
 /storage/*.key
 /vendor
 .env
@@ -16,7 +18,7 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-
+local_ssh_script*
 /.phpunit.cache
 
 /public/build/

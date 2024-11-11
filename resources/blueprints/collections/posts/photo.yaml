@@ -58,11 +58,11 @@ tabs:
               mode: select
               localizable: false
           -
-            handle: username
+            handle: people
             field:
               type: terms
               taxonomies:
-                - username
-              display: Username
+                - people
+              display: people
               mode: select
               localizable: false

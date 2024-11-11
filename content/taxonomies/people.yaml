@@ -1,4 +1,4 @@
-title: Username
+title: People
 preview_targets:
   -
     label: Term
@@ -7,4 +7,4 @@ preview_targets:
 layout: layout
 sites:
   - default
-  - goat
+  - team

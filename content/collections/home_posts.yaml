@@ -2,6 +2,8 @@ title: 'Home Posts'
 sites:
   - home
 propagate: false
+taxonomies:
+  - people
 revisions: false
 date_behavior:
   past: public

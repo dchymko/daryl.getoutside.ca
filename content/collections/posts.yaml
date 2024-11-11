@@ -1,11 +1,13 @@
 title: 'Stumblr Posts'
 sites:
   - default
+  - goat
 propagate: false
 template: default
 layout: layout
 taxonomies:
   - tags
+  - username
 revisions: false
 route: '/posts/{slug}'
 date: true

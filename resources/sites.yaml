@@ -6,3 +6,7 @@ home:
   name: Home
   url: /
   locale: en_US
+goat:
+  name: 'Get Outside Adventure Team'
+  url: /goat
+  locale: en_US

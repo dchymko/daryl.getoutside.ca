@@ -38,7 +38,26 @@ return [
     */
 
     'widgets' => [
-        'getting_started_with_stumblr',
+        [
+            'type' => 'collection',
+            'collection' => 'home_pages',
+            'limit' => 10,
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'home_posts',
+            'limit' => 10,
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'pages',
+            'limit' => 10,
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'posts',
+            'limit' => 10,
+        ]
     ],
 
     /*

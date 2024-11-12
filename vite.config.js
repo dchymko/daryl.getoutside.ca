@@ -21,6 +21,7 @@ export default defineConfig(({ command, mode }) => {
                     'resources/css/tailwind.css',
                     'resources/css/peak.site.css',
                     'resources/js/site.js',
+                    'resources/js/peak.site.js',
                 ]
             })
         ],

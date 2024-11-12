@@ -5,3 +5,12 @@ fields:
     field:
       type: code
       display: Content
+      localizable: false
+  -
+    handle: strava_link
+    field:
+      placeholder: 'https://www.strava.com/activities/12345678'
+      type: text
+      display: 'Strava Link'
+      instructions: 'Link to a (public) Strava activity'
+      localizable: false

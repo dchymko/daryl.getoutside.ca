@@ -1,3 +1,9 @@
-title: Okanagan
-updated_by: 9ac223ad-d633-46ef-a5b7-f482caba9221
-updated_at: 1731395782
+title: okanagan
+blueprint: tag
+localizations:
+  team:
+    title: okanagan
+    content: null
+    slug: okanagan
+    updated_by: 9ac223ad-d633-46ef-a5b7-f482caba9221
+    updated_at: 1731420292

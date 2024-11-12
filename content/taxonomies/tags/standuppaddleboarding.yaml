@@ -1,1 +1,9 @@
-title: StandupPaddleBoarding
+title: standuppaddleboarding
+blueprint: tag
+localizations:
+  team:
+    title: standuppaddleboarding
+    content: null
+    slug: standuppaddleboarding
+    updated_by: 9ac223ad-d633-46ef-a5b7-f482caba9221
+    updated_at: 1731420308

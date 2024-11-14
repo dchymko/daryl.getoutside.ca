@@ -40,12 +40,7 @@ return [
     'widgets' => [
         [
             'type' => 'collection',
-            'collection' => 'home_pages',
-            'limit' => 10,
-        ],
-        [
-            'type' => 'collection',
-            'collection' => 'home_posts',
+            'collection' => 'posts',
             'limit' => 10,
         ],
         [
@@ -55,9 +50,14 @@ return [
         ],
         [
             'type' => 'collection',
-            'collection' => 'posts',
+            'collection' => 'home_posts',
             'limit' => 10,
-        ]
+        ],
+        [
+            'type' => 'collection',
+            'collection' => 'home_pages',
+            'limit' => 10,
+        ],
     ],
 
     /*

@@ -1,0 +1,66 @@
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              localizable: false
+              validate:
+                - required
+          -
+            handle: content
+            field:
+              type: markdown
+              localizable: true
+          -
+            handle: tracks
+            field:
+              type: grid
+              display: tracks
+              localizable: false
+              sortable: false
+              mode: stacked
+              reorderable: false
+              visibility: hidden
+              fields:
+                -
+                  handle: lat
+                  field:
+                    type: text
+                    display: lat
+                    localizable: false
+                -
+                  handle: long
+                  field:
+                    type: text
+                    display: long
+                    localizable: false
+                -
+                  handle: ele
+                  field:
+                    type: text
+                    display: ele
+                    localizable: false
+                -
+                  handle: time
+                  field:
+                    type: text
+                    display: time
+                    localizable: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+title: 'GPS Track'

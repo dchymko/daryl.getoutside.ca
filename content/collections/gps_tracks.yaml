@@ -1,0 +1,18 @@
+title: 'GPS Tracks'
+sites:
+  - default
+  - team
+propagate: false
+template: gps_tracks/show-csv
+layout: empty
+revisions: false
+route: '/gps_tracks/{slug}'
+sort_dir: asc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: true

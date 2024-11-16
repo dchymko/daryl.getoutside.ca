@@ -1,1 +1,29 @@
-<div id="map" style="height:180px"></div>
+<div id="map-{{slug}}" style="width: 500px; height: 300px;">
+</div>
+<script>
+
+    const map = L.map('map-{{slug}}').setView([50.26, -119.2518], 13);
+
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+
+
+    fetch('/team/gps_tracks/{{gps-track-id}}')
+        .then(response => response.text())
+        .then((data) => {
+            var capaGeoCSV = L.geoCsv(data, {
+                lineSeparator: '|',
+                fieldSeparator: ';'
+            });
+            let rows = data.split('|')
+            let middle = rows[1]
+            let d = middle.split(';')
+            //map.setView([d[0], d[1]], 13);
+
+            map.addLayer(capaGeoCSV);
+        })
+
+</script>

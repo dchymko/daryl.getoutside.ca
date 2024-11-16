@@ -22,3 +22,9 @@ fields:
       type: text
       display: 'RideWithGPS Ride Id'
       localizable: false
+  -
+    handle: gpx_entry
+    field:
+      type: text
+      display: GPX_entry
+      localizable: false

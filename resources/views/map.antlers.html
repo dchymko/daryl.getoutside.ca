@@ -13,34 +13,16 @@
     fetch('/team/gps_tracks/new-on-go')
         .then(response => response.text())
         .then((data) => {
-            console.log(data)
             var capaGeoCSV = L.geoCsv(data, {
-                onEachFeature: function (f, l) {
-                    console.log("feature", f)
-                    var popup = f.properties.popup;
-                    l.bindPopup(popup);
-                },
                 lineSeparator: '|',
                 fieldSeparator: ';'
             });
             let rows = data.split('|')
-            let last = rows[rows.length - 5]
-            let d = last.split(';')
-
+            let middle = rows[1]
+            let d = middle.split(';')
             map.setView([d[0], d[1]], 13);
 
             map.addLayer(capaGeoCSV);
         })
-
-
-
-
-    //console.log(capaGeoCSV)
-
-    //capaGeoCSV.addData(getFromURL())
-
-
-    //lo añadimos al mapa
-    //map.addLayer(capaGeoCSV);
 
 </script>

@@ -15,3 +15,10 @@ fields:
       instructions: 'Link to a (public) Strava activity ID'
       localizable: false
       character_limit: 12
+  -
+    handle: ridewithgps_ride_id
+    field:
+      character_limit: 12
+      type: text
+      display: 'RideWithGPS Ride Id'
+      localizable: false

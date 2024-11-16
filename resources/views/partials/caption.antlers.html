@@ -10,6 +10,9 @@
     {{ if strava_activity_id }}
     {{partial:strava-embed :activity-id="strava_activity_id"}}
     {{ /if }}
+    {{ if ridewithgps_ride_id }}
+    {{partial:ridewithgps-embed :activity-id="ridewithgps_ride_id"}}
+    {{ /if }}
   </div>
   {{ if tags }}
   <div class="flex flex-wrap text-sm">

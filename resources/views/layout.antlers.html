@@ -1,55 +1,64 @@
 <!DOCTYPE html>
 <html lang="{{ site:short_locale }}">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>{{ title ?? site:name }} | daryl.getoutside.ca</title>
-        <meta name="description" content="{{ global:tagline ?? "My Statamic
-        Stumblr Site" }}">
-        <meta property="og:title" content="{{ title ?? site:name }}" />
-        <meta
-            property="og:site_name"
-            content="{{ site_name ?? config:app:name }}"
-        />
-        <meta property="og:type" content="website" />
-        <meta property="og:locale" content="{{ site:locale }}" />
-        <meta property="og:description" content="{{ global:tagline ?? "My
-        Statamic Stumblr Site" }}">
-        <link rel="sitemap" href="/sitemap.xml" type="application/xml" />
-        <link
-            rel="alternate"
-            type="application/rss+xml"
-            title="RSS Feed"
-            href="/feed.xml"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="/favicon-32x32.png"
-            sizes="32x32"
-        />
-        <link
-            rel="icon"
-            type="image/png"
-            href="/favicon-16x16.png"
-            sizes="16x16"
-        />
-        {{ vite src="resources/js/site.js|resources/css/tailwind.css" }}
-        <!-- Fathom - beautiful, simple website analytics -->
-        <script
-            src="https://cdn.usefathom.com/script.js"
-            data-site="XHGLCQXR"
-            defer
-        ></script>
-        <!-- / Fathom -->
-    </head>
-    <body class="bg-white text-black">
-        <div class="relative z-10">
-            {{ partial:nav }} {{ template_content }} {{ partial:footer }}
-        </div>
-        <div class="bg-pattern h-[700px] absolute top-0 inset-x-0 z-[0]">
-            <div class="w-full h-full bg-gradient-to-t from-white"></div>
-        </div>
-    </body>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ title ?? site:name }} | daryl.getoutside.ca</title>
+    <meta name="description" content="{{ global:tagline ?? " My Statamic Stumblr Site" }}">
+    <meta property="og:title" content="{{ title ?? site:name }}" />
+    <meta property="og:site_name" content="{{ site_name ?? config:app:name }}" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="{{ site:locale }}" />
+    <meta property="og:description" content="{{ global:tagline ?? " My Statamic Stumblr Site" }}">
+    <link rel="sitemap" href="/sitemap.xml" type="application/xml" />
+    <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="/feed.xml" />
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16" />
+    {{ vite src="resources/js/site.js|resources/css/tailwind.css" }}
+    <!-- Fathom - beautiful, simple website analytics -->
+    <script src="https://cdn.usefathom.com/script.js" data-site="XHGLCQXR" defer></script>
+    <!-- / Fathom -->
+    <script>
+        function switchTab(groupId, tabIndex) {
+            // Find the container for this tab group
+            const container = document.querySelector(`[data-tab-group="${groupId}"]`);
+
+            // Update tab buttons within this group
+            const buttons = container.querySelectorAll('.tab-button');
+            buttons.forEach((button, index) => {
+                if (index === tabIndex) {
+                    button.classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
+                    button.classList.remove('text-gray-500');
+                } else {
+                    button.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+                    button.classList.add('text-gray-500');
+                }
+            });
+
+            // Update tab content within this group
+            const contents = container.querySelectorAll('.tab-content');
+            contents.forEach((content, index) => {
+                if (index === tabIndex) {
+                    content.classList.remove('hidden');
+                    content.classList.add('block');
+                } else {
+                    content.classList.remove('block');
+                    content.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+</head>
+
+<body class="bg-white text-black">
+    <div class="relative z-10">
+        {{ partial:nav }} {{ template_content }} {{ partial:footer }}
+    </div>
+    <div class="bg-pattern h-[700px] absolute top-0 inset-x-0 z-[0]">
+        <div class="w-full h-full bg-gradient-to-t from-white"></div>
+    </div>
+</body>
+
 </html>

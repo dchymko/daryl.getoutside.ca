@@ -1,33 +1,3 @@
-<script>
-  function switchTab(groupId, tabIndex) {
-    // Find the container for this tab group
-    const container = document.querySelector(`[data-tab-group="${groupId}"]`);
-
-    // Update tab buttons within this group
-    const buttons = container.querySelectorAll('.tab-button');
-    buttons.forEach((button, index) => {
-      if (index === tabIndex) {
-        button.classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
-        button.classList.remove('text-gray-500');
-      } else {
-        button.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
-        button.classList.add('text-gray-500');
-      }
-    });
-
-    // Update tab content within this group
-    const contents = container.querySelectorAll('.tab-content');
-    contents.forEach((content, index) => {
-      if (index === tabIndex) {
-        content.classList.remove('hidden');
-        content.classList.add('block');
-      } else {
-        content.classList.remove('block');
-        content.classList.add('hidden');
-      }
-    });
-  }
-</script>
 <div class="relative">
   <div class="absolute -left-24 top-16">
     <div class="text-center uppercase">
@@ -66,7 +36,7 @@
       <div class="flex border-b border-gray-200">
         <button onclick="switchTab('{{slug}}', 0)"
           class="tab-button px-4 py-2 text-sm font-medium text-blue-600 border-b-2 border-blue-600">
-          Route
+          Main
         </button>
         {{ if strava_activity_id }}
         <button onclick="switchTab('{{slug}}', 1)"

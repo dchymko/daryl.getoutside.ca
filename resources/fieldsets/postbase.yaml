@@ -7,10 +7,11 @@ fields:
       display: Content
       localizable: false
   -
-    handle: strava_link
+    handle: strava_activity_id
     field:
-      placeholder: 'https://www.strava.com/activities/12345678'
+      placeholder: '123456789'
       type: text
-      display: 'Strava Link'
-      instructions: 'Link to a (public) Strava activity'
+      display: 'Strava Activity ID'
+      instructions: 'Link to a (public) Strava activity ID'
       localizable: false
+      character_limit: 12

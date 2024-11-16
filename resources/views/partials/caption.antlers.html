@@ -1,25 +1,22 @@
-  <div class="px-4 py-6 space-y-4">
-    <div
-      class="{{ prose ?? 'prose' }} prose-a:text-indigo-800 prose-a:underline leading-normal"
-    >
-      {{ caption }}
-    </div>
-    <div class="flex flex-col">
+<div class="px-4 py-6 space-y-4">
+  <div class="{{ prose ?? 'prose' }} prose-a:text-indigo-800 prose-a:underline leading-normal">
+    {{ caption }}
+  </div>
+  <div class="flex flex-col">
     {{ if people}} {{ people}}
     <div>Author: <a href="{{  url }}"> {{"@" + $title}}</a></div>
     {{ /people}} {{ /if}} {{ content }}
-  {{ if strava_link }}
-  <div>Strava: <a target="_new" href="{{ strava_link }}">{{ strava_link }}</a></div>
-  {{ /if }}
-    </div>
-    {{ if tags }}
-    <div class="flex flex-wrap text-sm">
-      {{ tags }}
-      <a href="{{ url }}" class="text-gray-600 mr-3 hover:text-black"
-        ><span class="text-gray-400">#</span>{{ title }}</a
-      >
-      {{ /tags }}
-    </div>
+    {{ strava_activity_id }}
+    {{ if strava_activity_id }}
+    {{partial:strava-embed :activity-id="strava_activity_id"}}
     {{ /if }}
-
   </div>
+  {{ if tags }}
+  <div class="flex flex-wrap text-sm">
+    {{ tags }}
+    <a href="{{ url }}" class="text-gray-600 mr-3 hover:text-black"><span class="text-gray-400">#</span>{{ title }}</a>
+    {{ /tags }}
+  </div>
+  {{ /if }}
+
+</div>

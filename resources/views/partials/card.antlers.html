@@ -1,16 +1,40 @@
+<script>
+  function switchTab(groupId, tabIndex) {
+    // Find the container for this tab group
+    const container = document.querySelector(`[data-tab-group="${groupId}"]`);
+
+    // Update tab buttons within this group
+    const buttons = container.querySelectorAll('.tab-button');
+    buttons.forEach((button, index) => {
+      if (index === tabIndex) {
+        button.classList.add('text-blue-600', 'border-b-2', 'border-blue-600');
+        button.classList.remove('text-gray-500');
+      } else {
+        button.classList.remove('text-blue-600', 'border-b-2', 'border-blue-600');
+        button.classList.add('text-gray-500');
+      }
+    });
+
+    // Update tab content within this group
+    const contents = container.querySelectorAll('.tab-content');
+    contents.forEach((content, index) => {
+      if (index === tabIndex) {
+        content.classList.remove('hidden');
+        content.classList.add('block');
+      } else {
+        content.classList.remove('block');
+        content.classList.add('hidden');
+      }
+    });
+  }
+</script>
 <div class="relative">
   <div class="absolute -left-24 top-16">
     <div class="text-center uppercase">
       <a href="{{ url }}" class="flex flex-col hover:text-indigo-800">
-        <span class="leading-none font-light tracking-widest text-sm"
-          >{{ date format="M" }}</span
-        >
-        <span class="leading-none font-black text-3xl"
-          >{{ date format="j" }}</span
-        >
-        <span class="leading-none font-black text-sm"
-          >{{ date format="Y" }}</span
-        >
+        <span class="leading-none font-light tracking-widest text-sm">{{ date format="M" }}</span>
+        <span class="leading-none font-black text-3xl">{{ date format="j" }}</span>
+        <span class="leading-none font-black text-sm">{{ date format="Y" }}</span>
       </a>
       <a href="{{$ route('posts.type', $blueprint) $}}">
         {{ svg src="assets/icons/{blueprint}" class="h-10 w-10 my-6 mx-auto
@@ -18,8 +42,49 @@
       </a>
     </div>
   </div>
-  <div class="rounded-lg shadow-3xl bg-white">
-    <div>{{ partial src="post_types/{blueprint}" }}</div>
-    {{ partial:caption }}
+  <div class="rounded-lg shadow-3xl bg-white tab-container" data-tab-group="{{slug}}">
+    <div class="w-full max-w-2xl mx-auto">
+      <!-- Tab Navigation -->
+      <!-- Tab Content -->
+      <div class="mt-4">
+        <div class="tab-content block p-4 rounded-lg bg-gray-50">
+          <div>{{ partial src="post_types/{blueprint}" }}</div>
+
+        </div>
+        <div class="tab-content hidden p-4 rounded-lg bg-gray-50">
+          {{ if strava_activity_id }}
+          {{partial:strava-embed :activity-id="strava_activity_id"}}
+          {{ /if }}
+
+        </div>
+        <div class="tab-content hidden p-4 rounded-lg bg-gray-50">
+          {{ if ridewithgps_ride_id }}
+          {{partial:ridewithgps-embed :activity-id="ridewithgps_ride_id"}}
+          {{ /if }}
+        </div>
+      </div>
+      <div class="flex border-b border-gray-200">
+        <button onclick="switchTab('{{slug}}', 0)"
+          class="tab-button px-4 py-2 text-sm font-medium text-blue-600 border-b-2 border-blue-600">
+          Route
+        </button>
+        {{ if strava_activity_id }}
+        <button onclick="switchTab('{{slug}}', 1)"
+          class="tab-button px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+          Strava
+        </button>
+        {{ /if }}
+        {{ if ridewithgps_ride_id }}
+        <button onclick="switchTab('{{slug}}', 2)"
+          class="tab-button px-4 py-2 text-sm font-medium text-gray-500 hover:text-gray-700">
+          Ride With GPS
+        </button>
+        {{ /if }}
+      </div>
+
+
+      {{ partial:caption }}
+    </div>
+
   </div>
 </div>

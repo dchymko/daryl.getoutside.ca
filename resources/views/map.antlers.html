@@ -1,0 +1,46 @@
+<div id="map" style="width: 600px; height: 400px;"></div>
+<script>
+
+    const map = L.map('map').setView([50.26, -119.2518], 13);
+
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+
+
+    fetch('/team/gps_tracks/new-on-go')
+        .then(response => response.text())
+        .then((data) => {
+            console.log(data)
+            var capaGeoCSV = L.geoCsv(data, {
+                onEachFeature: function (f, l) {
+                    console.log("feature", f)
+                    var popup = f.properties.popup;
+                    l.bindPopup(popup);
+                },
+                lineSeparator: '|',
+                fieldSeparator: ';'
+            });
+            let rows = data.split('|')
+            let last = rows[rows.length - 5]
+            let d = last.split(';')
+
+            map.setView([d[0], d[1]], 13);
+
+            map.addLayer(capaGeoCSV);
+        })
+
+
+
+
+    //console.log(capaGeoCSV)
+
+    //capaGeoCSV.addData(getFromURL())
+
+
+    //lo añadimos al mapa
+    //map.addLayer(capaGeoCSV);
+
+</script>

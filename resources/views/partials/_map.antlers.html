@@ -1,5 +1,7 @@
 <div id="map-{{slug}}" class="max-w-full min-h-[18rem]">
 </div>
+{{gps_track}} {{ url_slug = slug}} {{ /gps_track}}
+
 <script>
 
     const map = L.map('map-{{slug}}').setView([50.26, -119.2518], 13);
@@ -10,8 +12,7 @@
     }).addTo(map);
 
 
-
-    fetch('/team/gps_tracks/{{gps-track-id}}')
+    fetch('/team/gps_tracks/{{ url_slug }}')
         .then(response => response.text())
         .then((data) => {
             var markerArray = [];
@@ -19,14 +20,9 @@
                 lineSeparator: '|',
                 fieldSeparator: ';'
             });
-            let rows = data.split('|')
-            let middle = rows[1]
-            let first = rows[0]
-            let last = rows[rows.length - 5]
-            let d = middle.split(';')
-            let lastA = last.split(';')
-            //map.setView([d[0], d[1]], 13);
 
+            // get 20% of the points to determine the map bounds
+            let rows = data.split('|')
             for (let i = 0; i < rows.length - 1; i = i + 5) {
                 let coords = rows[i].split(';')
                 markerArray.push(L.marker([coords[0], coords[1]]));

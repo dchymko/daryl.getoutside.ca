@@ -23,8 +23,12 @@ fields:
       display: 'RideWithGPS Ride Id'
       localizable: false
   -
-    handle: gpx_entry
+    handle: gps_track
     field:
-      type: text
-      display: GPX_entry
+      max_items: 1
+      mode: select
+      collections:
+        - gps_tracks
+      type: entries
+      display: 'GPS Track'
       localizable: false

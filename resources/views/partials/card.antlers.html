@@ -19,8 +19,8 @@
       <!-- Tab Content -->
       <div class="mt-4">
         <div class="tab-content block p-4 rounded-lg bg-gray-50">
-          {{ if gpx_entry }}
-          {{partial:map :gps-track-id="gpx_entry"}}
+          {{ if gps_track }}
+          {{partial:map :gps-track-id="gps_track"}}
           {{ /if }}
         </div>
         <div class="tab-content hidden p-4 rounded-lg bg-gray-50">

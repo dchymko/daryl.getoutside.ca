@@ -1,2 +1,2 @@
-{{tracks}}{{ $factor1 = total_results | *:0.05 | ceil }}{{ if index | mod:factor1 == 0 }}{{ lat
+{{tracks}}{{ $factor1 = total_results | divide:25 | ceil }}{{ if index | mod:factor1 == 0 }}{{ lat
 }};{{long}};Place|{{/if}}{{/tracks}}

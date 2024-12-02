@@ -1,6 +1,7 @@
 title: 'Home Pages'
 sites:
   - home
+  - inc
 propagate: false
 template: default
 layout: layout

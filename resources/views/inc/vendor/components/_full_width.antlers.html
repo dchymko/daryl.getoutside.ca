@@ -1,0 +1,21 @@
+{{#
+    @name Full Width
+    @desc The Full Width component.
+    @set page.article.full_width
+#}}
+
+<!-- /components/_full_width.antlers.html -->
+<div
+    class="
+        not-prose
+        {{ switch(
+            (size == 'md') => 'span-md',
+            (size == 'lg') => 'span-lg',
+            (size == 'xl') => 'span-xl',
+            () => 'span-md'
+        )}}
+    "
+>
+    <h2>🔧<br>Full Width</h2>
+</div>
+<!-- End: /components/_full_width.antlers.html -->

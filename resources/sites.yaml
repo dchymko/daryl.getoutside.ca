@@ -10,3 +10,7 @@ team:
   name: 'Get Outside Adventure Team'
   url: /team
   locale: en_US
+inc:
+  name: 'Get Outside Inc'
+  url: 'https://getoutsideinc.ca'
+  locale: en_US

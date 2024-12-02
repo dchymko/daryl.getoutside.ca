@@ -14,6 +14,7 @@ tabs:
               width: 50
               instructions: 'Show all content of page whenever an URL does not exist.'
               collections:
+                - home_pages
                 - pages
               validate:
                 - required
@@ -24,15 +25,11 @@ tabs:
           -
             handle: copyright_name
             field:
-              input_type: text
-              antlers: false
               display: 'Copyright name'
               type: text
-              icon: text
               instructions: 'Falls back to the application name.'
               width: 50
-              listable: hidden
-              instructions_position: above
+              localizable: false
           -
             handle: copyright_since
             field:
@@ -40,17 +37,14 @@ tabs:
               input_type: number
               character_limit: 4
               prepend: ©
-              antlers: false
               default: '2020'
               display: 'Copyright since'
               instructions: 'The website will add ` - current_year ` if they differ.'
               type: text
-              icon: text
               width: 50
-              listable: hidden
-              instructions_position: above
               validate:
                 - required
+              localizable: false
       -
         display: 'Privacy statement'
         instructions: 'Configure an optional privacy statement.'
